@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Weather App</title>
+  </head>
+  <body class="bg-slate-50">
+    <!-- all container -->
+
+    <div
+      class="container text-center bg-white rounded-xl shadow-xl mx-auto w-[75%] my-[50px]"
+    >
+      <h1 class="title font-bold text-[30px] my-[30px]">Weather App</h1>
+
+      <!-- form input -->
+
+      <form class="flex justify-between mx-[20%]">
+        <input
+          type="text"
+          placeholder="Enter City"
+          class="city_input outline-transparent"
+        />
+        <button
+          type="submit"
+          class="submit text-white bg-blue-500 rounded px-[23px] h-[40px] my-[20px] hidden md:block"
+        >
+          Get Weather
+        </button>
+        <button
+          class="submit2 text-white bg-blue-500 rounded px-[23px] h-[40px] my-[20px] md:hidden"
+        >
+          Weather
+        </button>
+      </form>
+
+      <!-- results container -->
+
+      <div class="results__container hidden">
+        <div class="image-container text-center">
+          <img
+            src="#"
+            alt="forecast image"
+            class="weather_img w-[50px] mx-auto"
+          />
+        </div>
+        <h2 class="temp text-center my-5 text-[60px] font-bold">4˚C</h2>
+        <p class="weather__type text-center text-[30px]">overcast clouds</p>
+        <div class="more__nfo flex flex-col py-5 justify-evenly sm:flex-row">
+          <div
+            class="feels-like text-center bg-slate-300 rounded px-5 py-[20px] mx-5 mb-5"
+          >
+            Feels like: 3˚C
+          </div>
+          <div
+            class="humidity text-center bg-slate-300 rounded px-5 py-[20px] mx-5 mb-5"
+          >
+            Humidity: 81%
+          </div>
+          <div
+            class="windspeed text-center bg-slate-300 rounded px-5 py-[20px] mx-5 mb-5"
+          >
+            Wind Speed: 1.54 m/s
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
