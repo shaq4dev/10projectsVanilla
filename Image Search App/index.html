@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="page-container bg-slate-100">
+      <h1 class="title font-bold text-3xl text-center py-11">
+        Image Search App
+      </h1>
+      <form
+        class="search flex flex-col mx-11 my-5 sm:flex sm:flex-row sm:justify-center"
+      >
+        <input
+          type="text"
+          placeholder="Search Image"
+          class="formIn bg-white py-3 px-2 my-5 sm:w-[30rem] rounded outline-black"
+        />
+        <button
+          class="submit bg-green-500 text-white px-5 py-3 my-5 rounded cursor-pointer"
+        >
+          Submit
+        </button>
+      </form>
+
+      <!-- Image Description -->
+
+      <div
+        class="section-container flex flex-col sm:grid sm:gap-4 sm:grid-cols-2 sm:grid-rows-1 sm:mx-2 lg:grid lg:gap-4 lg:grid-cols-3 lg:grid-rows-1"
+      >
+        <!-- image 1 -->
+        <!-- <div class="content max-w-sm mx-auto my-8 shadow-lg sm:mx-2">
+          <img
+            src="https://images.unsplash.com/photo-1597655601841-214a4cfe8b2c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW91bnRhaW4lMjBzY2VuZXJ5fGVufDB8fDB8fHww&w=1000&q=80"
+            alt="#image"
+            class="rounded-t-lg hover:scale-105 transition-all cursor-pointer"
+          />
+          <p class="desc py-5 px-2 bg-white rounded-b-lg">
+            Description of the image
+          </p>
+        </div> -->
+      </div>
+      <!-- load more -->
+      <div class="buttonS flex">
+        <button
+          class="load bg-blue-500 text-white rounded py-2 px-2 my-8 mx-auto hidden"
+        >
+          Load More
+        </button>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
