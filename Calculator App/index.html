@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- page -->
+
+    <div class="page-container">
+      <div
+        class="calculator-wrapper bg-slate-200 shadow-lg my-16 mx-auto w-[50vw] py-5 px-5 rounded-xl max-w-[460px]"
+      >
+        <div class="output__results">
+          <input
+            type="text"
+            id="output"
+            readonly
+            class="final_results rounded-xl bg-white mb-8 h-[46px] px-2 w-[100%] focus:outline-none"
+          />
+        </div>
+        <div class="input__digits grid grid-cols-4 grid-rows-5 gap-2">
+          <!-- row 1 -->
+          <button
+            class="bg-rose-500 text-center text-white rounded py-1 hover:cursor-pointer hover:bg-rose-600 transition-all"
+          >
+            C
+          </button>
+          <button
+            class="bg-blue-500 text-center text-white rounded py-1 hover:cursor-pointer hover:bg-blue-600 transition-all"
+          >
+            /
+          </button>
+          <button
+            class="bg-blue-500 text-center text-white rounded py-1 hover:cursor-pointer hover:bg-blue-600 transition-all"
+          >
+            *
+          </button>
+          <button
+            class="bg-blue-500 text-center text-white rounded py-1 hover:cursor-pointer hover:bg-blue-600 transition-all"
+          >
+            -
+          </button>
+          <!-- row 2 -->
+          <button
+            class="text-center shadow-md py-1 hover:cursor-pointer hover:bg-slate-200 transition-all bg-white"
+          >
+            7
+          </button>
+          <button
+            class="text-center shadow-md py-1 hover:cursor-pointer hover:bg-slate-200 transition-all rounded bg-white"
+          >
+            8
+          </button>
+          <button
+            class="text-center shadow-md py-1 hover:cursor-pointer hover:bg-slate-200 transition-all rounded bg-white"
+          >
+            9
+          </button>
+          <button
+            class="bg-blue-500 text-center text-white rounded py-1 hover:cursor-pointer hover:bg-blue-600 transition-all rounded"
+          >
+            +
+          </button>
+          <!-- row 3  -->
+          <button
+            class="text-center shadow-md py-1 hover:cursor-pointer hover:bg-slate-200 transition-all rounded bg-white"
+          >
+            4
+          </button>
+          <button
+            class="text-center shadow-md py-1 hover:cursor-pointer hover:bg-slate-200 transition-all rounded bg-white"
+          >
+            5
+          </button>
+          <button
+            class="text-center shadow-md py-1 hover:cursor-pointer hover:bg-slate-200 transition-all rounded bg-white"
+          >
+            6
+          </button>
+          <button
+            class="text-center shadow-md row-span-3 my-auto py-11 bg-green-400 text-white rounded-lg rounded hover:cursor-pointer hover:bg-green-500 transition-all"
+          >
+            =
+          </button>
+          <!-- row 4 -->
+          <button
+            class="text-center shadow-md py-1 hover:cursor-pointer hover:bg-slate-200 transition-all rounded bg-white"
+          >
+            1
+          </button>
+          <button
+            class="text-center shadow-md py-1 hover:cursor-pointer hover:bg-slate-200 transition-all rounded bg-white"
+          >
+            2
+          </button>
+          <button
+            class="text-center shadow-md py-1 hover:cursor-pointer hover:bg-slate-200 transition-all rounded bg-white"
+          >
+            3
+          </button>
+          <!-- row 5 -->
+
+          <button
+            class="text-center shadow-md py-1 hover:cursor-pointer hover:bg-slate-200 transition-all rounded bg-white"
+          >
+            0
+          </button>
+          <button
+            class="text-center shadow-md py-1 hover:cursor-pointer hover:bg-slate-200 transition-all rounded bg-white"
+          >
+            .
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
